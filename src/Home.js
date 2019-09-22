@@ -1,9 +1,22 @@
 import React from "react";
+import {
+    Jumbotron,
+    Container,
+    Button
+} from "react-bootstrap";
 
-function Home(){
+function Home() {
     return (
         <div>
-            <h1>Home</h1>
+            <Jumbotron fluid>
+                <Container>
+                    <h1>Home Page</h1>
+                    <p>
+                        Subtitle
+                    </p>
+                    <Button variant="primary">Learn more</Button>
+                </Container>
+            </Jumbotron>
         </div>
     );
 }

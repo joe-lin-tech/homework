@@ -1,15 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Home from './Home';
 import Teacher from './Teacher';
 import Student from './Student';
-import { Route, Link } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Navbar from './Navigation';
 
 function App() {
   return (
     <div className="App">
+      <Navbar />
       <Route exact path="/" component={Home} />
       <Route exact path="/teacher" component={Teacher} />
       <Route exact path="/student" component={Student} />
